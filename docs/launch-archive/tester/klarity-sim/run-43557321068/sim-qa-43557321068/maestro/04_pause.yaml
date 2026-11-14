@@ -1,0 +1,10 @@
+appId: com.samayhuf.klarity
+---
+- scrollUntilVisible:
+    element: "Open Instagram"
+    direction: DOWN
+    timeout: 20000
+- tapOn: "Open Instagram"
+- extendedWaitUntil:
+    visible: "Still want Instagram\\?"
+    timeout: 30000

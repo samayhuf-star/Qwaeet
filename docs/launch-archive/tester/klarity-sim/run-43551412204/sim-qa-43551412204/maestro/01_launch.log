@@ -1,0 +1,6 @@
+Anonymous analytics enabled. To opt out, set MAESTRO_CLI_NO_ANALYTICS environment variable to any value before running Maestro.
+
+Running on iPhone 17 Pro - iOS 26.2 - 98A0BFA3-CEC3-4FD6-9916-5A2149774DBF
+ > Flow 01_launch
+Launch app "com.samayhuf.klarity" with clear state... COMPLETED
+Assert that "Welcome to Klarity" is visible... COMPLETED

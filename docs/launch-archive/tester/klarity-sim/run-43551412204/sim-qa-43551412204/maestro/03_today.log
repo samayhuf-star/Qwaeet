@@ -1,0 +1,5 @@
+Running on iPhone 17 Pro - iOS 26.2 - 98A0BFA3-CEC3-4FD6-9916-5A2149774DBF
+ > Flow 03_today
+Scrolling DOWN until "Done" is visible with speed 40, visibility percentage 100%, timeout 20000 ms, with centering disabled... COMPLETED
+Tap on "Done"... COMPLETED
+Assert that "Opens today" is visible... COMPLETED

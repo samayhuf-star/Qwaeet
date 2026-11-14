@@ -1,0 +1,4 @@
+appId: com.samayhuf.klarity
+---
+- assertVisible: ".*7 days free, then \\$2\\.99/month, cancel anytime.*"
+- assertVisible: ".*7 days free, then \\$19\\.99/year, cancel anytime.*"

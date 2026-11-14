@@ -1,0 +1,9 @@
+appId: com.samayhuf.klarity
+---
+- extendedWaitUntil:
+    visible: "Do something else"
+    timeout: 90000
+- tapOn: "Do something else"
+- extendedWaitUntil:
+    visible: "Just close this"
+    timeout: 15000

@@ -1,0 +1,7 @@
+Running on iPhone 17 Pro - iOS 26.2 - 98A0BFA3-CEC3-4FD6-9916-5A2149774DBF
+ > Flow 10_paywall_from_settings
+Tap on id: settings-pro... COMPLETED
+Assert that id: paywall-screen is visible... COMPLETED
+Assert that ".*\$39\.99 one-time purchase.*" is visible... COMPLETED
+Tap on id: paywall-close... COMPLETED
+Assert that id: settings-pro is visible... COMPLETED

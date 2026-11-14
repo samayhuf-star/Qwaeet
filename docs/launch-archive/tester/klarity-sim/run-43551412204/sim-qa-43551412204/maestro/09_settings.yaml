@@ -1,0 +1,6 @@
+appId: com.samayhuf.klarity
+---
+- tapOn: "Settings"
+- extendedWaitUntil:
+    visible: "Daily opens goal"
+    timeout: 15000

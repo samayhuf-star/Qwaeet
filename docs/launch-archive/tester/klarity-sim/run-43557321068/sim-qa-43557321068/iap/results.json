@@ -1,0 +1,28 @@
+{
+  "steps" : [
+    {
+      "detail" : "home-screen not found",
+      "name" : "Home reached (attempt 1)",
+      "pass" : false,
+      "step" : "05"
+    },
+    {
+      "name" : "Home reached (attempt 2)",
+      "detail" : "home-screen not found",
+      "pass" : false,
+      "step" : "05"
+    },
+    {
+      "detail" : "not attempted",
+      "name" : "Monthly purchase through local StoreKit (no sandbox sign-in)",
+      "pass" : false,
+      "step" : "22"
+    },
+    {
+      "step" : "23",
+      "name" : "Restore purchases (Settings)",
+      "pass" : false,
+      "detail" : "skipped, purchase did not complete"
+    }
+  ]
+}

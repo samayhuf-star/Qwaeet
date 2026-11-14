@@ -1,0 +1,11 @@
+appId: com.samayhuf.klarity
+---
+- tapOn: "Just close this"
+- runFlow:
+    when:
+      visible: "Back to Klarity"
+    commands:
+      - tapOn: "Back to Klarity"
+- extendedWaitUntil:
+    visible: "Opens today"
+    timeout: 20000

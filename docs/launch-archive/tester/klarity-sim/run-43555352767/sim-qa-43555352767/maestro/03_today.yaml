@@ -1,0 +1,10 @@
+appId: com.samayhuf.klarity
+---
+- scrollUntilVisible:
+    element: "Done"
+    direction: DOWN
+    timeout: 20000
+- tapOn: "Done"
+- extendedWaitUntil:
+    visible: "Opens today"
+    timeout: 20000

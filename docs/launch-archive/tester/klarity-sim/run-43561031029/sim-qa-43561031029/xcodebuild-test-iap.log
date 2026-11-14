@@ -1,0 +1,162 @@
+Command line invocation:
+    /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/xcodebuild test-without-building -workspace ios/Klarity.xcworkspace -scheme Klarity -configuration Release -destination "platform=iOS Simulator,id=98A0BFA3-CEC3-4FD6-9916-5A2149774DBF" -derivedDataPath /Users/runner/work/sim-qa-runner/sim-qa-runner/ios/DerivedData -resultBundlePath /tmp/sim-qa/iap/iap.xcresult "-only-testing:KlarityQATests/SimQATests/testPaywallPurchaseAndRestore"
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  OpenIAP: https://github.com/hyodotdev/openiap.git @ 4.1.0
+
+Writing result bundle at path:
+	/tmp/sim-qa/iap/iap.xcresult
+
+--- xcodebuild: WARNING: Using the first of multiple matching destinations:
+{ platform:iOS Simulator, arch:arm64, id:98A0BFA3-CEC3-4FD6-9916-5A2149774DBF, OS:26.2, name:iPhone 17 Pro }
+{ platform:iOS Simulator, arch:x86_64, id:98A0BFA3-CEC3-4FD6-9916-5A2149774DBF, OS:26.2, name:iPhone 17 Pro }
+2026-11-14 05:50:47.267693+0000 KlarityQATests-Runner[82734:219348] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-11-14 05:50:50.392.
+Test Suite 'KlarityQATests.xctest' started at 2026-11-14 05:50:50.393.
+Test Suite 'SimQATests' started at 2026-11-14 05:50:50.394.
+Test Case '-[KlarityQATests.SimQATests testPaywallPurchaseAndRestore]' started.
+    t =     0.00s Start Test at 2026-11-14 05:50:50.395
+    t =     1.14s Set Up
+2026-11-14 05:50:53.191942+0000 KlarityQATests-Runner[82734:219348] [klarity-qa] SKTestSession (setup) from /tmp/klarity-sk/Klarity.storekit
+    t =     2.80s Open com.samayhuf.klarity
+    t =     2.80s     Launch com.samayhuf.klarity
+2026-11-14 05:50:53.888 xcodebuild[81840:217201] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-11-14 05:50:53.889 xcodebuild[81840:217201] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     6.69s         Setting up automation session
+    t =     9.33s         Wait for com.samayhuf.klarity to idle
+    t =    10.74s Waiting 20.0s for Any (First Match) to exist
+    t =    11.78s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    11.78s         Checking existence of `Any (First Match)`
+    t =    12.25s Waiting 10.0s for "tab-settings" Any to exist
+    t =    13.34s     Checking `Expect predicate `existsNoRetry == 1` for object "tab-settings" Any`
+    t =    13.34s         Checking existence of `"tab-settings" Any`
+    t =    13.38s Find the "tab-settings" Any
+    t =    13.47s Tap "tab-settings" Button
+    t =    13.47s     Wait for com.samayhuf.klarity to idle
+    t =    13.47s     Find the "tab-settings" Button
+    t =    13.51s     Check for interrupting elements affecting "tab-settings" Button
+    t =    13.59s     Synthesize event
+    t =    13.92s     Wait for com.samayhuf.klarity to idle
+    t =    14.93s Waiting 10.0s for "settings-pro" Any to exist
+    t =    15.97s     Checking `Expect predicate `existsNoRetry == 1` for object "settings-pro" Any`
+    t =    15.97s         Checking existence of `"settings-pro" Any`
+    t =    16.10s Find the "settings-pro" Any
+    t =    16.24s Tap "settings-pro" Button
+    t =    16.24s     Wait for com.samayhuf.klarity to idle
+    t =    16.24s     Find the "settings-pro" Button
+    t =    16.33s     Check for interrupting elements affecting "settings-pro" Button
+    t =    16.43s     Synthesize event
+    t =    16.72s     Wait for com.samayhuf.klarity to idle
+    t =    17.16s Waiting 15.0s for "paywall-screen" Any to exist
+    t =    18.18s     Checking `Expect predicate `existsNoRetry == 1` for object "paywall-screen" Any`
+    t =    18.19s         Checking existence of `"paywall-screen" Any`
+    t =    18.22s Waiting 30.0s for Any (First Match) to exist
+    t =    19.29s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    19.29s         Checking existence of `Any (First Match)`
+    t =    19.39s Waiting 20.0s for Any (First Match) to exist
+    t =    20.45s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    20.45s         Checking existence of `Any (First Match)`
+    t =    20.53s Checking existence of `Any (First Match)`
+    t =    20.58s Checking existence of `Any (First Match)`
+    t =    20.63s Checking existence of `Any (First Match)`
+    t =    20.81s Checking existence of `"paywall-restore" Any`
+    t =    20.91s Checking existence of `"paywall-terms" Any`
+    t =    21.00s Checking existence of `"paywall-privacy" Any`
+    t =    21.11s Checking existence of `"paywall-close" Any`
+    t =    21.31s Added attachment named '05-paywall'
+    t =    21.31s Checking existence of `"paywall-plan-lifetime" Any`
+    t =    21.39s Find the "paywall-plan-lifetime" Any
+    t =    21.59s Added attachment named '05b-paywall-lower'
+2026-11-14 05:51:11.983579+0000 KlarityQATests-Runner[82734:219348] [klarity-qa] step 05 PASS Paywall: local StoreKit prices, 7-day trial, lifetime, restore, links, close (attempt 1): monthly=true yearly=true lifetime=true noLifetimeTrial=true restore=true terms=true privacy=true close=true session=true
+    t =    21.59s Find the "paywall-plan-monthly" Any
+    t =    21.68s Find the "paywall-plan-monthly" Other
+    t =    21.77s Tap "paywall-plan-monthly" Other
+    t =    21.77s     Wait for com.samayhuf.klarity to idle
+    t =    21.78s     Find the "paywall-plan-monthly" Other
+    t =    21.86s     Check for interrupting elements affecting "paywall-plan-monthly" Other
+    t =    21.95s     Synthesize event
+    t =    22.24s     Wait for com.samayhuf.klarity to idle
+    t =    23.05s Find the "paywall-buy" Any
+    t =    23.21s Find the "paywall-buy" Button
+    t =    23.40s Tap "paywall-buy" Button
+    t =    23.40s     Wait for com.samayhuf.klarity to idle
+    t =    23.40s     Find the "paywall-buy" Button
+    t =    23.54s     Check for interrupting elements affecting "paywall-buy" Button
+    t =    23.65s     Synthesize event
+    t =    23.94s     Wait for com.samayhuf.klarity to idle
+    t =    23.96s Checking existence of `Any (First Match)`
+    t =    24.10s Checking existence of `Any (First Match)`
+    t =    24.21s Checking existence of `Any (First Match)`
+    t =    24.35s Checking existence of `Any (First Match)`
+    t =    24.82s Checking existence of `Any (First Match)`
+    t =    25.12s Checking existence of `Any (First Match)`
+    t =    25.33s Checking existence of `"Subscribe" Button`
+    t =    25.53s Checking existence of `"Purchase" Button`
+    t =    25.73s Checking existence of `"Buy" Button`
+    t =    25.87s Checking existence of `"Confirm" Button`
+    t =    26.05s Checking existence of `"Start Free Trial" Button`
+    t =    26.21s Checking existence of `"Try It Free" Button`
+    t =    26.37s Checking existence of `"Subscribe" Button`
+    t =    26.41s Checking existence of `"Purchase" Button`
+    t =    26.44s Checking existence of `"Buy" Button`
+    t =    26.47s Checking existence of `"Confirm" Button`
+    t =    26.50s Checking existence of `"Start Free Trial" Button`
+    t =    26.54s Checking existence of `"Try It Free" Button`
+    t =    26.57s Checking existence of `Alert (First Match)`
+    t =    26.71s Checking existence of `"paywall-screen" Any`
+    t =    29.03s Checking existence of `"paywall-screen" Any`
+    t =    29.25s Waiting 15.0s for Any (First Match) to exist
+    t =    30.30s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    30.30s         Checking existence of `Any (First Match)`
+    t =    30.47s Added attachment named '22-purchase-success'
+    t =    30.47s Checking existence of `"paywall-screen" Any`
+2026-11-14 05:51:21.269784+0000 KlarityQATests-Runner[82734:219348] [klarity-qa] step 22 PASS Monthly purchase through local StoreKit (no sandbox sign-in): attempt 1: paywallClosed=true localSheetShown=false proActive=true; local tx com.samayhuf.klarity.monthly expires in 7.0d
+    t =    30.88s Waiting 10.0s for "settings-restore" Any to exist
+    t =    31.93s     Checking `Expect predicate `existsNoRetry == 1` for object "settings-restore" Any`
+    t =    31.93s         Checking existence of `"settings-restore" Any`
+    t =    32.07s Find the "settings-restore" Any
+    t =    32.25s Tap "settings-restore" Button
+    t =    32.25s     Wait for com.samayhuf.klarity to idle
+    t =    32.25s     Find the "settings-restore" Button
+    t =    32.39s     Check for interrupting elements affecting "settings-restore" Button
+    t =    32.48s     Synthesize event
+    t =    32.78s     Wait for com.samayhuf.klarity to idle
+    t =    32.79s Checking existence of `Any (First Match)`
+    t =    32.85s Checking existence of `Any (First Match)`
+    t =    32.93s Checking existence of `Any (First Match)`
+    t =    33.01s Checking existence of `Any (First Match)`
+    t =    33.25s Checking existence of `Any (First Match)`
+    t =    33.42s Checking existence of `Any (First Match)`
+    t =    33.61s Checking existence of `Alert (First Match)`
+    t =    33.62s Find the Alert (First Match)
+    t =    33.77s Added attachment named '23-restore-success'
+    t =    33.77s Tap Button (First Match)
+    t =    33.77s     Wait for com.samayhuf.klarity to idle
+    t =    33.78s     Find the Button (First Match)
+    t =    33.84s     Check for interrupting elements affecting "OK" Button
+    t =    33.90s     Synthesize event
+    t =    34.21s     Wait for com.samayhuf.klarity to idle
+    t =    35.45s Checking existence of `Any (First Match)`
+2026-11-14 05:51:25.911500+0000 KlarityQATests-Runner[82734:219348] [klarity-qa] step 23 PASS Restore purchases (Settings): alert: Restored; local tx com.samayhuf.klarity.monthly expires in 7.0d; proActiveAfter=true
+    t =    35.52s Tear Down
+Test Case '-[KlarityQATests.SimQATests testPaywallPurchaseAndRestore]' passed (35.857 seconds).
+Test Suite 'SimQATests' passed at 2026-11-14 05:51:26.252.
+	 Executed 1 test, with 0 failures (0 unexpected) in 35.857 (35.858) seconds
+Test Suite 'KlarityQATests.xctest' passed at 2026-11-14 05:51:26.253.
+	 Executed 1 test, with 0 failures (0 unexpected) in 35.857 (35.860) seconds
+Test Suite 'Selected tests' passed at 2026-11-14 05:51:26.253.
+	 Executed 1 test, with 0 failures (0 unexpected) in 35.857 (35.861) seconds
+2026-11-14 05:51:27.805 xcodebuild[81840:217201] [MT] IDETestOperationsObserverDebug: 58.947 elapsed -- Testing started completed.
+2026-11-14 05:51:27.805 xcodebuild[81840:217201] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-14 05:51:27.805 xcodebuild[81840:217201] [MT] IDETestOperationsObserverDebug: 58.947 sec, +58.947 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/sim-qa/iap/iap.xcresult
+
+** TEST EXECUTE SUCCEEDED **
+
+Testing started

@@ -1,0 +1,32 @@
+1. Screen recording
+[Screen recording link: TO ADD]
+On a physical iPhone from launch: welcome; pick one app; the Klarity Pro paywall opens (close it with X); Shortcuts setup, tap Done; on Today tap "Open <app>" for the pause without Shortcuts; wait out the countdown; choose "Do something else" or "Open <app>"; open Apps, Insights, Settings; in Settings tap "See Klarity Pro" and "Restore purchases". No account, login or user-generated content.
+
+2. Purpose and audience
+Klarity is for people who want a short pause before opening apps they open automatically (e.g. Instagram, YouTube). After a one-time Shortcuts setup, opening a chosen app opens Klarity first. Klarity cannot see activity inside other apps. General consumer app, not medical; it does not use Screen Time or Family Controls. Free to download.
+
+3. Setup and main features
+No sign-in. iPhone only. Tabs: Today, Apps, Insights, Settings.
+- Pause without Shortcuts (best for review): on Today tap "Open <app>". Countdown (default 10 s, +5 s per earlier open that day, max 2 min), then "Do something else" or "Open <app>". A 5-minute grace period follows an open.
+- Pause via Shortcuts: Settings > "Shortcuts setup and status". In Shortcuts: Automation, +, App, pick app, "Is Opened", "Run Immediately", add "Open URLs" with the klarity://pause/<id> link Klarity shows. Users can turn it off anytime.
+- Apps: wait, daily limit and grace per app. Insights: on-device summary. Settings: goals, optional local 8 p.m. reminder, PIN lock, rules backup, erase data.
+
+Paid content (Klarity Pro, optional). Free: the full pause flow for up to 3 apps, waits, daily limits, grace, 7-day insights, reminder, lock, backup. Pro unlocks: more than 3 apps and custom apps by URL scheme, scheduled blocks and Strict mode, 30-day insights.
+In-app purchases (StoreKit 2):
+- com.samayhuf.klarity.monthly: $2.99/month auto-renewing, 7-day free trial
+- com.samayhuf.klarity.yearly: $19.99/year auto-renewing, 7-day free trial
+- com.samayhuf.klarity.lifetime: $39.99 one-time non-consumable, no trial
+Monthly and yearly share the group "Klarity Pro". The paywall appears once after onboarding (closable, not required) and from Settings > "See Klarity Pro", or when tapping a Pro feature. It shows "7 days free, then $2.99/month, cancel anytime", the yearly line and the lifetime line, plus auto-renew terms, Terms of Use (Apple standard EULA) and Privacy Policy links. Restore purchases is on the paywall and in Settings. With Pro active, Settings shows "Klarity Pro is active". Use a Sandbox Apple Account to test; no demo login is needed.
+
+4. External services
+Apple's App Store (StoreKit 2) for purchases and restore; Klarity never sees payment details. No account service, analytics, ads, or network API receiving user data. On-device modules only: local notifications, clipboard, linking, haptics, storage. Pause history stays on the device.
+
+5. Regional differences
+Features are the same in every region. Prices come from the App Store in local currency (US: $2.99, $19.99, $39.99). Dates use the device clock.
+
+6. Regulated or third-party material
+None. Not a medical, financial or regulated product. No licensed third-party material.
+Privacy Policy: https://samayhuf-star.github.io/Klarity/privacy.html
+Terms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+Contact: Samay Vashsht, +91 9953710111, samayhuf@gmail.com

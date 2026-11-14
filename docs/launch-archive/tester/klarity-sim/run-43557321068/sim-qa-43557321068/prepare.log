@@ -1,0 +1,17 @@
+added UI test target KlarityQATests to /Users/runner/work/sim-qa-runner/sim-qa-runner/ios/Klarity.xcodeproj
+KlarityQATests Release: PRODUCT_NAME=KlarityQATests TEST_TARGET_NAME=Klarity
+KlarityQATests Debug: PRODUCT_NAME=KlarityQATests TEST_TARGET_NAME=Klarity
+updated scheme /Users/runner/work/sim-qa-runner/sim-qa-runner/ios/Klarity.xcodeproj/xcshareddata/xcschemes/Klarity.xcscheme
+storekit reference: ../../storekit/Klarity.storekit in LaunchAction and TestAction, plus test-target resource
+==> StoreKit scheme references
+66:      <StoreKitConfigurationFileReference
+67-         identifier = "../../storekit/Klarity.storekit">
+68:      </StoreKitConfigurationFileReference>
+69-   </TestAction>
+--
+90:      <StoreKitConfigurationFileReference
+91-         identifier = "../../storekit/Klarity.storekit">
+92:      </StoreKitConfigurationFileReference>
+93-   </LaunchAction>
+scheme has the UI test host
+[('com.samayhuf.klarity.yearly', '19.99', 'P1W'), ('com.samayhuf.klarity.monthly', '2.99', 'P1W')] [('com.samayhuf.klarity.lifetime', '39.99')]

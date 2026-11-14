@@ -1,0 +1,16 @@
+appId: com.samayhuf.klarity
+---
+- scrollUntilVisible:
+    element:
+      id: "paywall-restore"
+    direction: DOWN
+    timeout: 10000
+- assertVisible:
+    id: "paywall-terms"
+- assertVisible:
+    id: "paywall-privacy"
+- tapOn:
+    id: "paywall-close"
+- extendedWaitUntil:
+    visible: "Connect your apps"
+    timeout: 20000

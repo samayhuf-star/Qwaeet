@@ -1,0 +1,359 @@
+Command line invocation:
+    /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/xcodebuild test-without-building -workspace ios/Klarity.xcworkspace -scheme Klarity -configuration Release -destination "platform=iOS Simulator,id=98A0BFA3-CEC3-4FD6-9916-5A2149774DBF" -derivedDataPath /Users/runner/work/sim-qa-runner/sim-qa-runner/ios/DerivedData -resultBundlePath /tmp/sim-qa/iap/iap.xcresult "-only-testing:KlarityQATests/SimQATests/testPaywallPurchaseAndRestore"
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  OpenIAP: https://github.com/hyodotdev/openiap.git @ 4.1.0
+
+Writing result bundle at path:
+	/tmp/sim-qa/iap/iap.xcresult
+
+--- xcodebuild: WARNING: Using the first of multiple matching destinations:
+{ platform:iOS Simulator, arch:arm64, id:98A0BFA3-CEC3-4FD6-9916-5A2149774DBF, OS:26.2, name:iPhone 17 Pro }
+{ platform:iOS Simulator, arch:x86_64, id:98A0BFA3-CEC3-4FD6-9916-5A2149774DBF, OS:26.2, name:iPhone 17 Pro }
+2026-11-14 05:04:03.158528+0000 KlarityQATests-Runner[74249:198703] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-11-14 05:04:05.107.
+Test Suite 'KlarityQATests.xctest' started at 2026-11-14 05:04:05.108.
+Test Suite 'SimQATests' started at 2026-11-14 05:04:05.108.
+Test Case '-[KlarityQATests.SimQATests testPaywallPurchaseAndRestore]' started.
+    t =     0.00s Start Test at 2026-11-14 05:04:05.109
+    t =     1.02s Set Up
+2026-11-14 05:04:07.097624+0000 KlarityQATests-Runner[74249:198703] [klarity-qa] SKTestSession (setup) from /tmp/klarity-sk/Klarity.storekit
+    t =     1.99s Open com.samayhuf.klarity
+    t =     1.99s     Launch com.samayhuf.klarity
+2026-11-14 05:04:07.894 xcodebuild[73284:196356] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-11-14 05:04:07.894 xcodebuild[73284:196356] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     6.48s         Setting up automation session
+    t =     9.51s         Wait for com.samayhuf.klarity to idle
+    t =    10.82s Waiting 20.0s for "home-screen" Any to exist
+    t =    11.87s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    11.87s         Checking existence of `"home-screen" Any`
+    t =    12.06s         Capturing element debug description
+    t =    12.90s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    12.90s         Checking existence of `"home-screen" Any`
+    t =    13.07s         Capturing element debug description
+    t =    13.83s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    13.83s         Checking existence of `"home-screen" Any`
+    t =    14.11s         Capturing element debug description
+    t =    14.85s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    14.85s         Checking existence of `"home-screen" Any`
+    t =    15.03s         Capturing element debug description
+    t =    15.89s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    15.89s         Checking existence of `"home-screen" Any`
+    t =    16.03s         Capturing element debug description
+    t =    16.89s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    16.89s         Checking existence of `"home-screen" Any`
+    t =    17.04s         Capturing element debug description
+    t =    17.89s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    17.89s         Checking existence of `"home-screen" Any`
+    t =    18.03s         Capturing element debug description
+    t =    18.87s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    18.87s         Checking existence of `"home-screen" Any`
+    t =    19.15s         Capturing element debug description
+    t =    19.88s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    19.88s         Checking existence of `"home-screen" Any`
+    t =    20.02s         Capturing element debug description
+    t =    20.87s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    20.87s         Checking existence of `"home-screen" Any`
+    t =    21.04s         Capturing element debug description
+    t =    21.87s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    21.87s         Checking existence of `"home-screen" Any`
+    t =    22.04s         Capturing element debug description
+    t =    22.85s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    22.85s         Checking existence of `"home-screen" Any`
+    t =    23.01s         Capturing element debug description
+    t =    23.85s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    23.86s         Checking existence of `"home-screen" Any`
+    t =    24.12s         Capturing element debug description
+    t =    24.83s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    24.83s         Checking existence of `"home-screen" Any`
+    t =    24.99s         Capturing element debug description
+    t =    25.83s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    25.83s         Checking existence of `"home-screen" Any`
+    t =    25.96s         Capturing element debug description
+    t =    26.89s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    26.90s         Checking existence of `"home-screen" Any`
+    t =    27.05s         Capturing element debug description
+    t =    27.90s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    27.90s         Checking existence of `"home-screen" Any`
+    t =    28.06s         Capturing element debug description
+    t =    28.83s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    28.83s         Checking existence of `"home-screen" Any`
+    t =    29.04s         Capturing element debug description
+    t =    29.89s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    29.89s         Checking existence of `"home-screen" Any`
+    t =    30.03s         Capturing element debug description
+    t =    30.83s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    30.84s         Checking existence of `"home-screen" Any`
+    t =    30.98s         Capturing element debug description
+    t =    30.98s     Checking existence of `"home-screen" Any`
+    t =    31.12s Collecting debug information to assist test failure triage
+    t =    31.12s     Requesting snapshot of accessibility hierarchy for app with pid 74967
+    t =    31.18s Waiting 10.0s for "onboarding-continue" Any to exist
+    t =    32.24s     Checking `Expect predicate `existsNoRetry == 1` for object "onboarding-continue" Any`
+    t =    32.24s         Checking existence of `"onboarding-continue" Any`
+    t =    32.42s         Capturing element debug description
+    t =    33.27s     Checking `Expect predicate `existsNoRetry == 1` for object "onboarding-continue" Any`
+    t =    33.27s         Checking existence of `"onboarding-continue" Any`
+    t =    33.41s         Capturing element debug description
+    t =    34.23s     Checking `Expect predicate `existsNoRetry == 1` for object "onboarding-continue" Any`
+    t =    34.23s         Checking existence of `"onboarding-continue" Any`
+    t =    34.56s         Capturing element debug description
+    t =    35.18s     Checking `Expect predicate `existsNoRetry == 1` for object "onboarding-continue" Any`
+    t =    35.19s         Checking existence of `"onboarding-continue" Any`
+    t =    35.66s         Capturing element debug description
+    t =    36.18s     Checking `Expect predicate `existsNoRetry == 1` for object "onboarding-continue" Any`
+    t =    36.19s         Checking existence of `"onboarding-continue" Any`
+    t =    36.40s         Capturing element debug description
+    t =    37.22s     Checking `Expect predicate `existsNoRetry == 1` for object "onboarding-continue" Any`
+    t =    37.22s         Checking existence of `"onboarding-continue" Any`
+    t =    37.39s         Capturing element debug description
+    t =    38.23s     Checking `Expect predicate `existsNoRetry == 1` for object "onboarding-continue" Any`
+    t =    38.23s         Checking existence of `"onboarding-continue" Any`
+    t =    38.48s         Capturing element debug description
+    t =    39.21s     Checking `Expect predicate `existsNoRetry == 1` for object "onboarding-continue" Any`
+    t =    39.21s         Checking existence of `"onboarding-continue" Any`
+    t =    39.42s         Capturing element debug description
+    t =    40.25s     Checking `Expect predicate `existsNoRetry == 1` for object "onboarding-continue" Any`
+    t =    40.25s         Checking existence of `"onboarding-continue" Any`
+    t =    40.44s         Capturing element debug description
+    t =    41.19s     Checking `Expect predicate `existsNoRetry == 1` for object "onboarding-continue" Any`
+    t =    41.19s         Checking existence of `"onboarding-continue" Any`
+    t =    41.34s         Capturing element debug description
+    t =    41.34s     Checking existence of `"onboarding-continue" Any`
+    t =    41.49s Collecting debug information to assist test failure triage
+    t =    41.49s     Requesting snapshot of accessibility hierarchy for app with pid 74967
+    t =    41.54s Waiting 15.0s for "home-screen" Any to exist
+    t =    42.62s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    42.62s         Checking existence of `"home-screen" Any`
+    t =    42.82s         Capturing element debug description
+    t =    43.56s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    43.56s         Checking existence of `"home-screen" Any`
+    t =    43.71s         Capturing element debug description
+    t =    44.56s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    44.56s         Checking existence of `"home-screen" Any`
+    t =    44.74s         Capturing element debug description
+    t =    45.58s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    45.58s         Checking existence of `"home-screen" Any`
+    t =    45.76s         Capturing element debug description
+    t =    46.60s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    46.60s         Checking existence of `"home-screen" Any`
+    t =    46.76s         Capturing element debug description
+    t =    47.60s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    47.60s         Checking existence of `"home-screen" Any`
+    t =    47.78s         Capturing element debug description
+    t =    48.63s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    48.63s         Checking existence of `"home-screen" Any`
+    t =    48.79s         Capturing element debug description
+    t =    49.62s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    49.62s         Checking existence of `"home-screen" Any`
+    t =    49.80s         Capturing element debug description
+    t =    50.55s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    50.55s         Checking existence of `"home-screen" Any`
+    t =    50.73s         Capturing element debug description
+    t =    51.56s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    51.56s         Checking existence of `"home-screen" Any`
+    t =    51.96s         Capturing element debug description
+    t =    52.59s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    52.59s         Checking existence of `"home-screen" Any`
+    t =    52.94s         Capturing element debug description
+    t =    53.55s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    53.56s         Checking existence of `"home-screen" Any`
+    t =    53.79s         Capturing element debug description
+    t =    54.62s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    54.63s         Checking existence of `"home-screen" Any`
+    t =    55.19s         Capturing element debug description
+    t =    55.60s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    55.60s         Checking existence of `"home-screen" Any`
+    t =    55.94s         Capturing element debug description
+    t =    56.55s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    56.55s         Checking existence of `"home-screen" Any`
+    t =    56.70s         Capturing element debug description
+    t =    56.70s     Checking existence of `"home-screen" Any`
+    t =    56.85s Collecting debug information to assist test failure triage
+    t =    56.85s     Requesting snapshot of accessibility hierarchy for app with pid 74967
+    t =    57.11s Added attachment named '21-home-missing-1'
+2026-11-14 05:05:02.221943+0000 KlarityQATests-Runner[74249:198703] [klarity-qa] step 05 FAIL Home reached (attempt 1): home-screen not found
+2026-11-14 05:05:02.222106+0000 KlarityQATests-Runner[74249:198703] [klarity-qa] retry: new SKTestSession and relaunch
+    t =    57.12s Checking existence of `"Cancel" Button`
+    t =    57.21s Checking existence of `"Cancel" Button`
+    t =    57.29s Terminate com.samayhuf.klarity:74967
+2026-11-14 05:05:06.476536+0000 KlarityQATests-Runner[74249:198703] [klarity-qa] SKTestSession (retry) from /tmp/klarity-sk/Klarity.storekit
+    t =    64.38s Open com.samayhuf.klarity
+    t =    64.38s     Launch com.samayhuf.klarity
+2026-11-14 05:05:09.633 xcodebuild[73284:196356] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-11-14 05:05:09.633 xcodebuild[73284:196356] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    65.83s         Setting up automation session
+    t =    67.62s         Wait for com.samayhuf.klarity to idle
+    t =    68.95s Waiting 20.0s for "home-screen" Any to exist
+    t =    70.00s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    70.01s         Checking existence of `"home-screen" Any`
+    t =    70.27s         Capturing element debug description
+    t =    70.96s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    70.96s         Checking existence of `"home-screen" Any`
+    t =    71.16s         Capturing element debug description
+    t =    71.97s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    71.97s         Checking existence of `"home-screen" Any`
+    t =    72.23s         Capturing element debug description
+    t =    72.96s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    72.96s         Checking existence of `"home-screen" Any`
+    t =    73.20s         Capturing element debug description
+    t =    73.95s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    73.95s         Checking existence of `"home-screen" Any`
+    t =    74.26s         Capturing element debug description
+    t =    74.97s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    74.97s         Checking existence of `"home-screen" Any`
+    t =    75.22s         Capturing element debug description
+    t =    75.96s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    75.96s         Checking existence of `"home-screen" Any`
+    t =    76.32s         Capturing element debug description
+    t =    76.96s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    76.96s         Checking existence of `"home-screen" Any`
+    t =    77.20s         Capturing element debug description
+    t =    78.03s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    78.03s         Checking existence of `"home-screen" Any`
+    t =    78.27s         Capturing element debug description
+    t =    79.01s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    79.01s         Checking existence of `"home-screen" Any`
+    t =    79.20s         Capturing element debug description
+    t =    80.02s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    80.02s         Checking existence of `"home-screen" Any`
+    t =    80.18s         Capturing element debug description
+    t =    81.00s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    81.01s         Checking existence of `"home-screen" Any`
+    t =    81.18s         Capturing element debug description
+    t =    82.02s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    82.02s         Checking existence of `"home-screen" Any`
+    t =    82.24s         Capturing element debug description
+    t =    82.96s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    82.96s         Checking existence of `"home-screen" Any`
+    t =    83.31s         Capturing element debug description
+    t =    84.02s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    84.03s         Checking existence of `"home-screen" Any`
+    t =    84.31s         Capturing element debug description
+    t =    85.03s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    85.03s         Checking existence of `"home-screen" Any`
+    t =    85.37s         Capturing element debug description
+    t =    85.96s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    85.96s         Checking existence of `"home-screen" Any`
+    t =    86.27s         Capturing element debug description
+    t =    87.01s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    87.01s         Checking existence of `"home-screen" Any`
+    t =    87.27s         Capturing element debug description
+    t =    87.97s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    87.97s         Checking existence of `"home-screen" Any`
+    t =    88.22s         Capturing element debug description
+    t =    88.96s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =    88.96s         Checking existence of `"home-screen" Any`
+    t =    89.16s         Capturing element debug description
+    t =    89.16s     Checking existence of `"home-screen" Any`
+    t =    89.36s Collecting debug information to assist test failure triage
+    t =    89.36s     Requesting snapshot of accessibility hierarchy for app with pid 78391
+    t =    89.44s Waiting 10.0s for "onboarding-continue" Any to exist
+    t =    90.49s     Checking `Expect predicate `existsNoRetry == 1` for object "onboarding-continue" Any`
+    t =    90.49s         Checking existence of `"onboarding-continue" Any`
+    t =    90.93s         Capturing element debug description
+    t =    91.44s     Checking `Expect predicate `existsNoRetry == 1` for object "onboarding-continue" Any`
+    t =    91.44s         Checking existence of `"onboarding-continue" Any`
+    t =    91.61s         Capturing element debug description
+    t =    92.44s     Checking `Expect predicate `existsNoRetry == 1` for object "onboarding-continue" Any`
+    t =    92.44s         Checking existence of `"onboarding-continue" Any`
+    t =    92.61s         Capturing element debug description
+    t =    93.45s     Checking `Expect predicate `existsNoRetry == 1` for object "onboarding-continue" Any`
+    t =    93.45s         Checking existence of `"onboarding-continue" Any`
+    t =    93.66s         Capturing element debug description
+    t =    94.50s     Checking `Expect predicate `existsNoRetry == 1` for object "onboarding-continue" Any`
+    t =    94.50s         Checking existence of `"onboarding-continue" Any`
+    t =    94.77s         Capturing element debug description
+    t =    95.52s     Checking `Expect predicate `existsNoRetry == 1` for object "onboarding-continue" Any`
+    t =    95.52s         Checking existence of `"onboarding-continue" Any`
+    t =    95.83s         Capturing element debug description
+    t =    96.45s     Checking `Expect predicate `existsNoRetry == 1` for object "onboarding-continue" Any`
+    t =    96.45s         Checking existence of `"onboarding-continue" Any`
+    t =    96.64s         Capturing element debug description
+    t =    97.47s     Checking `Expect predicate `existsNoRetry == 1` for object "onboarding-continue" Any`
+    t =    97.47s         Checking existence of `"onboarding-continue" Any`
+    t =    97.69s         Capturing element debug description
+    t =    98.51s     Checking `Expect predicate `existsNoRetry == 1` for object "onboarding-continue" Any`
+    t =    98.51s         Checking existence of `"onboarding-continue" Any`
+    t =    98.77s         Capturing element debug description
+    t =    99.44s     Checking `Expect predicate `existsNoRetry == 1` for object "onboarding-continue" Any`
+    t =    99.44s         Checking existence of `"onboarding-continue" Any`
+    t =    99.63s         Capturing element debug description
+    t =    99.63s     Checking existence of `"onboarding-continue" Any`
+    t =    99.82s Collecting debug information to assist test failure triage
+    t =    99.83s     Requesting snapshot of accessibility hierarchy for app with pid 78391
+    t =    99.88s Waiting 15.0s for "home-screen" Any to exist
+    t =   100.90s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =   100.90s         Checking existence of `"home-screen" Any`
+    t =   101.09s         Capturing element debug description
+    t =   101.90s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =   101.90s         Checking existence of `"home-screen" Any`
+    t =   102.09s         Capturing element debug description
+    t =   102.91s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =   102.91s         Checking existence of `"home-screen" Any`
+    t =   103.11s         Capturing element debug description
+    t =   103.94s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =   103.94s         Checking existence of `"home-screen" Any`
+    t =   104.39s         Capturing element debug description
+    t =   104.92s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =   104.92s         Checking existence of `"home-screen" Any`
+    t =   105.08s         Capturing element debug description
+    t =   105.89s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =   105.89s         Checking existence of `"home-screen" Any`
+    t =   106.08s         Capturing element debug description
+    t =   106.91s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =   106.91s         Checking existence of `"home-screen" Any`
+    t =   107.10s         Capturing element debug description
+    t =   107.94s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =   107.94s         Checking existence of `"home-screen" Any`
+    t =   108.18s         Capturing element debug description
+    t =   108.90s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =   108.90s         Checking existence of `"home-screen" Any`
+    t =   109.07s         Capturing element debug description
+    t =   109.89s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =   109.89s         Checking existence of `"home-screen" Any`
+    t =   110.04s         Capturing element debug description
+    t =   110.89s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =   110.89s         Checking existence of `"home-screen" Any`
+    t =   111.20s         Capturing element debug description
+    t =   111.94s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =   111.94s         Checking existence of `"home-screen" Any`
+    t =   112.25s         Capturing element debug description
+    t =   112.89s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =   112.89s         Checking existence of `"home-screen" Any`
+    t =   113.11s         Capturing element debug description
+    t =   113.94s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =   113.94s         Checking existence of `"home-screen" Any`
+    t =   114.28s         Capturing element debug description
+    t =   114.89s     Checking `Expect predicate `existsNoRetry == 1` for object "home-screen" Any`
+    t =   114.89s         Checking existence of `"home-screen" Any`
+    t =   115.16s         Capturing element debug description
+    t =   115.16s     Checking existence of `"home-screen" Any`
+    t =   115.49s Collecting debug information to assist test failure triage
+    t =   115.49s     Requesting snapshot of accessibility hierarchy for app with pid 78391
+    t =   115.75s Added attachment named '21-home-missing-2'
+2026-11-14 05:06:00.858287+0000 KlarityQATests-Runner[74249:198703] [klarity-qa] step 05 FAIL Home reached (attempt 2): home-screen not found
+2026-11-14 05:06:00.859583+0000 KlarityQATests-Runner[74249:198703] [klarity-qa] step 22 FAIL Monthly purchase through local StoreKit (no sandbox sign-in): not attempted
+2026-11-14 05:06:00.860110+0000 KlarityQATests-Runner[74249:198703] [klarity-qa] step 23 FAIL Restore purchases (Settings): skipped, purchase did not complete
+    t =   115.76s Tear Down
+Test Case '-[KlarityQATests.SimQATests testPaywallPurchaseAndRestore]' passed (116.243 seconds).
+Test Suite 'SimQATests' passed at 2026-11-14 05:06:01.355.
+	 Executed 1 test, with 0 failures (0 unexpected) in 116.243 (116.247) seconds
+Test Suite 'KlarityQATests.xctest' passed at 2026-11-14 05:06:01.356.
+	 Executed 1 test, with 0 failures (0 unexpected) in 116.243 (116.248) seconds
+Test Suite 'Selected tests' passed at 2026-11-14 05:06:01.356.
+	 Executed 1 test, with 0 failures (0 unexpected) in 116.243 (116.250) seconds
+2026-11-14 05:06:03.067 xcodebuild[73284:196356] [MT] IDETestOperationsObserverDebug: 129.927 elapsed -- Testing started completed.
+2026-11-14 05:06:03.068 xcodebuild[73284:196356] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-14 05:06:03.068 xcodebuild[73284:196356] [MT] IDETestOperationsObserverDebug: 129.927 sec, +129.927 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/sim-qa/iap/iap.xcresult
+
+** TEST EXECUTE SUCCEEDED **
+
+Testing started

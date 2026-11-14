@@ -1,0 +1,11 @@
+Running on iPhone 17 Pro - iOS 26.2 - 98A0BFA3-CEC3-4FD6-9916-5A2149774DBF
+ > Flow 02_onboarding
+Tap on "Instagram"... COMPLETED
+Tap on "YouTube"... COMPLETED
+Tap on id: onboarding-continue... COMPLETED
+Assert that id: paywall-screen is visible... COMPLETED
+Assert that id: paywall-plan-monthly is visible... COMPLETED
+Assert that id: paywall-plan-yearly is visible... COMPLETED
+Assert that id: paywall-plan-lifetime is visible... COMPLETED
+Assert that ".*\$39\.99 one-time purchase.*" is visible... COMPLETED
+Assert that id: paywall-close is visible... COMPLETED

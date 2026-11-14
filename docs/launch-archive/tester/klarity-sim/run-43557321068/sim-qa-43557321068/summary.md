@@ -1,0 +1,32 @@
+## Klarity sim-qa
+
+```
+PASS 01_launch
+CRASH? app not running after 01_launch
+PASS 02_onboarding
+CRASH? app not running after 02_onboarding
+PASS 02b_paywall_trial_lines_optional
+CRASH? app not running after 02b_paywall_trial_lines_optional
+PASS 02c_paywall_close
+CRASH? app not running after 02c_paywall_close
+PASS 03_today
+CRASH? app not running after 03_today
+PASS 04_pause
+CRASH? app not running after 04_pause
+PASS 05_choice
+CRASH? app not running after 05_choice
+PASS 06_close
+CRASH? app not running after 06_close
+PASS 07_apps
+CRASH? app not running after 07_apps
+PASS 08_insights
+CRASH? app not running after 08_insights
+PASS 09_settings
+CRASH? app not running after 09_settings
+PASS 10_paywall_from_settings
+CRASH? app not running after 10_paywall_from_settings
+xcodebuild test exit: 0
+FAIL iap 05 local StoreKit paywall | home-screen not found
+FAIL iap 22 purchase | not attempted
+FAIL iap 23 restore | skipped, purchase did not complete
+```

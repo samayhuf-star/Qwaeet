@@ -1,0 +1,16 @@
+PASS 01_launch
+PASS 02_onboarding
+PASS 02b_paywall_trial_lines_optional
+PASS 02c_paywall_close
+PASS 03_today
+PASS 04_pause
+FAIL 05_choice
+FAIL 06_close
+FAIL 07_apps
+FAIL 08_insights
+FAIL 09_settings
+FAIL 10_paywall_from_settings
+xcodebuild test exit: 0
+PASS iap 05 local StoreKit paywall | monthly=true yearly=true lifetime=true noLifetimeTrial=true restore=true terms=true privacy=true close=true session=true
+PASS iap 22 purchase | attempt 1: paywallClosed=true localSheetShown=false proActive=true; local tx com.samayhuf.klarity.monthly expires in 7.0d
+PASS iap 23 restore | alert: Restored; local tx com.samayhuf.klarity.monthly expires in 7.0d; proActiveAfter=true

@@ -1,0 +1,7 @@
+appId: com.samayhuf.klarity
+---
+- launchApp:
+    clearState: true
+- extendedWaitUntil:
+    visible: "Welcome to Klarity"
+    timeout: 60000

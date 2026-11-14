@@ -1,0 +1,49 @@
+add build 204 
+whatsNew 200 
+betaAppLoc 201 
+reviewDetail 200 
+submit beta review 201 
+Traceback (most recent call last):
+  File "<stdin>", line 15, in <module>
+KeyError: 'data'
+{'data': {'type': 'betaAppReviewSubmissions', 'id': 'bf794fa7-405f-4b5d-95e2-6d20a5ecc4ed', 'attributes': {'betaReviewState': 'WAITING_FOR_REVIEW', 'submittedDate': '2026-11-13T19:16:20-08:00'}, 'relationships': {'build': {'links': {'self': 'https://api.appstoreconnect.apple.com/v1/betaAppReviewSubmissions/bf794fa7-405f-4b5d-95e2-6d20a5ecc4ed/relationships/build', 'related': 'https://api.appstoreconnect.apple.com/v1/betaAppReviewSubmissions/bf794fa7-405f-4b5d-95e2-6d20a5ecc4ed/build'}}}, 'links': {'self': 'https://api.appstoreconnect.apple.com/v1/betaAppReviewSubmissions/bf794fa7-405f-4b5d-95e2-6d20a5ecc4ed'}}, 'links': {'self': 'https://api.appstoreconnect.apple.com/v1/builds/bf794fa7-405f-4b5d-95e2-6d20a5ecc4ed/betaAppReviewSubmission'}}
+{'autoNotifyEnabled': True, 'internalBuildState': 'IN_BETA_TESTING', 'externalBuildState': 'WAITING_FOR_BETA_REVIEW'}
+{'errors': [{'id': '318881dd-f8fb-4e2d-b8bb-d121baf54f53', 'status': '403', 'code': 'FORBIDDEN_ERROR', 'title': 'The given operation is not allowed', 'detail': "The relationship 'betaGroups' does not allow 'GET_RELATIONSHIP'. Allowed operations are: CREATE, DELETE"}]}
+[('debutrivedi20@gmail.com', 'EMAIL', 'NOT_INVITED'), ('vafuvashisht@gmail.com', 'EMAIL', 'NOT_INVITED'), ('sdivya.nv@gmail.com', 'EMAIL', 'NOT_INVITED'), ('emailforsamay@gmail.com', 'EMAIL', 'NOT_INVITED')]
+B6 attrs VALID
+B6 whatsNew [{'whatsNew': 'Klarity for App Review screen recording. Record from launch through the main flow.', 'locale': 'en-US'}]
+add B6 internal 422 {
+  "errors" : [ {
+    "id" : "773255d7-fe6a-4f49-b908-ea7a02057243",
+    "status" : "422",
+    "code" : "ENTITY_UNPROCESSABLE",
+    "title" : "Builds cannot be assigned to this internal group.",
+    "detail" : "Cannot add internal group to a build."
+  } ]
+}
+add B6 F&F 204 
+withdraw B5 beta review (try) 403 {
+  "errors" : [ {
+    "id" : "b95355fd-4c51-457b-a992-cb0bcc107a6c",
+    "status" : "403",
+    "code" : "FORBIDDEN_ERROR",
+    "title" : "The given operation is not allowed",
+    "detail" : "The resource 'betaAppReviewSubmissions' does not allow 'DELETE'. Allowed operations are: CREATE, GET_COLLECT
+remove B5 from F&F 204 
+submit B6 beta review 422 {
+  "errors" : [ {
+    "id" : "3577f2c0-0455-4c96-9ba6-b74eccb974f3",
+    "status" : "422",
+    "code" : "ENTITY_UNPROCESSABLE.ANOTHER_BUILD_IN_REVIEW",
+    "title" : "Another build is in review.",
+    "detail" : "Another build in the same train is already in beta review. Please submit it again once
+READBACK B6 None {'autoNotifyEnabled': True, 'internalBuildState': 'IN_BETA_TESTING', 'externalBuildState': 'READY_FOR_BETA_SUBMISSION'}
+READBACK B5 WAITING_FOR_REVIEW {'autoNotifyEnabled': True, 'internalBuildState': 'IN_BETA_TESTING', 'externalBuildState': 'WAITING_FOR_BETA_REVIEW'}
+F&F builds ['6']
+Internal builds ['6', '5', '4']
+[('debutrivedi20@gmail.com', 'EMAIL', 'NOT_INVITED'), ('vafuvashisht@gmail.com', 'EMAIL', 'NOT_INVITED'), ('sdivya.nv@gmail.com', 'EMAIL', 'NOT_INVITED'), ('emailforsamay@gmail.com', 'EMAIL', 'NOT_INVITED')]
+B6 whatsNew 200 
+expire B5 200 
+submit B6 201 
+B6 WAITING_FOR_REVIEW {'autoNotifyEnabled': True, 'internalBuildState': 'IN_BETA_TESTING', 'externalBuildState': 'WAITING_FOR_BETA_REVIEW'}
+B5 True {'autoNotifyEnabled': True, 'internalBuildState': 'EXPIRED', 'externalBuildState': 'EXPIRED'}

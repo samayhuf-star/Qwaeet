@@ -1,0 +1,30 @@
+1. Screen recording
+[Screen recording link: TO ADD]
+Start at launch on a physical iPhone. Show: welcome; pick one app from the list (or skip); glance at Shortcuts setup and tap Done; on Today, tap “Open <app>” to run the pause without Shortcuts; stay through the countdown; choose “Do something else” or “Open <app>”; then briefly open Apps, Insights and Settings. There is no account, login, in-app purchase or user-generated content. Shortcuts is optional for review; the Today button demonstrates the pause on its own.
+
+2. Purpose and target audience
+Klarity is a free iPhone app for people who want a short pause before they open apps they often open automatically (for example Instagram or YouTube). After a one-time Shortcuts setup, opening a chosen app can open Klarity first. Klarity cannot see activity inside other apps. It is a general consumer app, not a medical product, and it does not use Screen Time or Family Controls. The app is free to download (US $0.00).
+
+3. Setup and how to reach the main features
+No account or sign-in is required. Review on iPhone (the app does not support iPad). From launch: welcome; pick apps from a built-in list or skip; setup explains a Shortcuts automation and shows a copyable link, klarity://pause/<app-id>. After Done, Today shows today’s opens, a streak, and a try-pause button. Tabs: Today, Apps, Insights, Settings.
+
+• Pause without Shortcuts (recommended for review). On Today, tap “Open <app>”. A countdown appears (default 10-second wait, growing later that day by 5 seconds per earlier open, up to 2 minutes). Then choose “Do something else” or “Open <app>”. “Not now” during the wait leads to swap suggestions. After an open, a 5-minute default grace period avoids a repeat pause.
+• Pause via Shortcuts (everyday use). In Settings, open “Shortcuts setup and status”. In Shortcuts: Automation tab; tap +; choose App; pick the app and select “Is Opened”; choose “Run Immediately”; add “Open URLs” and paste the link shown for that app; tap Done. The user can turn any automation off in Shortcuts at any time.
+• Apps and rules. On the Apps tab, add, remove or edit an app (custom name and URL scheme). Rules cover the wait, an optional daily limit, the grace window, an optional weekday-and-hour schedule (including overnight), and Strict mode. Strict mode only applies while the user’s Shortcuts automation is on. Klarity does not block apps system-wide.
+• Insights. Last-7-days summary computed on the device.
+• Settings. Daily opens goal (default 15) and minutes per open (default 6) are only used to estimate “time kept”. Evening check-in can schedule a local 8:00 p.m. device-time notification if permission is granted. An optional 4-digit PIN can lock rule changes for 1, 8 or 24 hours. Rules backup uses the share sheet; restore reads the clipboard. “Erase all data” clears local data and returns to welcome.
+
+There are no paid features.
+
+4. External services
+None that deliver core functionality. There is no StoreKit or other payment service, no account service, and no analytics or network API that receives user data. The app uses on-device Expo / React Native modules (local notifications, clipboard, linking, haptics, AsyncStorage). System uses: optional local notifications; Shortcuts and klarity://pause/<id> links; opening a chosen app by URL scheme after the user confirms; the share sheet and clipboard for a rules backup. Pause, open and skip events stay on this device.
+
+5. Regional differences
+Features and content are the same in every region. There is no regional pricing. Dates, streaks and schedules use the device’s local clock.
+
+6. Regulated or third-party material
+None. Klarity is not a medical, financial or other regulated-industry product. No licensed third-party material.
+Privacy Policy: https://samayhuf-star.github.io/Klarity/privacy.html
+Terms of Use: https://samayhuf-star.github.io/Klarity/terms.html
+
+Contact: Samay Vashsht, +91 9953710111, samayhuf@gmail.com.

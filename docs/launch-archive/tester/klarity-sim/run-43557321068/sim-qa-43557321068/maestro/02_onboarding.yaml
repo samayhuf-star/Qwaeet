@@ -1,0 +1,19 @@
+appId: com.samayhuf.klarity
+---
+- tapOn: "Instagram"
+- tapOn: "YouTube"
+- tapOn:
+    id: "onboarding-continue"
+- extendedWaitUntil:
+    visible:
+      id: "paywall-screen"
+    timeout: 20000
+- assertVisible:
+    id: "paywall-plan-monthly"
+- assertVisible:
+    id: "paywall-plan-yearly"
+- assertVisible:
+    id: "paywall-plan-lifetime"
+- assertVisible: ".*\\$39\\.99 one-time purchase.*"
+- assertVisible:
+    id: "paywall-close"

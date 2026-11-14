@@ -1,0 +1,15 @@
+appId: com.samayhuf.klarity
+---
+- tapOn:
+    id: "settings-pro"
+- extendedWaitUntil:
+    visible:
+      id: "paywall-screen"
+    timeout: 15000
+- assertVisible: ".*\\$39\\.99 one-time purchase.*"
+- tapOn:
+    id: "paywall-close"
+- extendedWaitUntil:
+    visible:
+      id: "settings-pro"
+    timeout: 15000

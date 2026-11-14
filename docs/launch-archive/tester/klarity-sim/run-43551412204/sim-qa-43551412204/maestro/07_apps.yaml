@@ -1,0 +1,4 @@
+appId: com.samayhuf.klarity
+---
+- tapOn: "Apps and rules"
+- waitForAnimationToEnd

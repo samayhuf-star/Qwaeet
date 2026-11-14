@@ -1,0 +1,22 @@
+## Klarity sim-qa
+
+```
+PASS 01_launch
+CRASH? app not running after 01_launch
+PASS 02_onboarding
+CRASH? app not running after 02_onboarding
+PASS 03_today
+CRASH? app not running after 03_today
+PASS 04_pause
+CRASH? app not running after 04_pause
+PASS 05_choice
+CRASH? app not running after 05_choice
+PASS 06_close
+CRASH? app not running after 06_close
+PASS 07_apps
+CRASH? app not running after 07_apps
+PASS 08_insights
+CRASH? app not running after 08_insights
+PASS 09_settings
+CRASH? app not running after 09_settings
+```

@@ -1,0 +1,8 @@
+appId: com.samayhuf.klarity
+---
+- tapOn:
+    id: "tab-settings"
+- extendedWaitUntil:
+    visible:
+      id: "settings-restore"
+    timeout: 15000

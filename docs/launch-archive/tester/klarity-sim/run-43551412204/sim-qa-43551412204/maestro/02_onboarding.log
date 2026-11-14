@@ -1,0 +1,6 @@
+Running on iPhone 17 Pro - iOS 26.2 - 98A0BFA3-CEC3-4FD6-9916-5A2149774DBF
+ > Flow 02_onboarding
+Tap on "Instagram"... COMPLETED
+Tap on "YouTube"... COMPLETED
+Tap on "Continue with 2 apps"... COMPLETED
+Assert that "Connect your apps" is visible... COMPLETED

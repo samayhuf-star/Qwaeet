@@ -1,0 +1,22 @@
+{
+  "steps" : [
+    {
+      "detail" : "monthly=true yearly=true lifetime=true noLifetimeTrial=true restore=true terms=true privacy=true close=true session=true",
+      "name" : "Paywall: local StoreKit prices, 7-day trial, lifetime, restore, links, close (attempt 1)",
+      "pass" : true,
+      "step" : "05"
+    },
+    {
+      "step" : "22",
+      "pass" : true,
+      "name" : "Monthly purchase through local StoreKit (no sandbox sign-in)",
+      "detail" : "attempt 1: paywallClosed=true localSheetShown=false proActive=true; local tx com.samayhuf.klarity.monthly expires in 7.0d"
+    },
+    {
+      "name" : "Restore purchases (Settings)",
+      "step" : "23",
+      "detail" : "alert: Restored; local tx com.samayhuf.klarity.monthly expires in 7.0d; proActiveAfter=true",
+      "pass" : true
+    }
+  ]
+}

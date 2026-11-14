@@ -1,0 +1,51 @@
+<!doctype html><html><head><meta charset="utf-8"><style>*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:402px;height:874px;overflow:hidden}
+body{font-family:Inter,'Noto Sans',sans-serif;color:#E8ECF4;background:radial-gradient(120% 60% at 50% 0%,#18213A 0%,#0C1222 55%,#090D19 100%);position:relative;-webkit-font-smoothing:antialiased}
+.status{position:relative;z-index:2;height:54px;display:flex;align-items:flex-end;justify-content:space-between;padding:0 30px 8px;font-size:15px;font-weight:600}
+.status .r{display:flex;gap:6px;align-items:center}
+.bat{width:24px;height:11px;border:1.5px solid #E8ECF4;border-radius:3px;position:relative}.bat:after{content:'';position:absolute;inset:1.5px;right:5px;background:#E8ECF4;border-radius:1px}
+.sample{position:absolute;top:60px;right:20px;font-size:9.5px;letter-spacing:.12em;font-weight:700;color:#F2C46D;border:1px solid rgba(242,196,109,.45);padding:3px 7px;border-radius:20px;background:rgba(242,196,109,.08);z-index:5}
+.wrap{padding:8px 22px 0}
+.hdr{display:flex;justify-content:space-between;align-items:center;margin:14px 0 4px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:700;font-size:17px;letter-spacing:.01em}
+.logo{width:28px;height:28px;border-radius:9px;background:linear-gradient(140deg,#F4B24A,#B06E16);display:grid;place-items:center}
+.logo:after{content:'';width:11px;height:11px;border-radius:50%;border:2.5px solid #0C1222}
+h1{font-size:30px;font-weight:700;letter-spacing:-.02em;line-height:1.15}
+h2{font-size:13px;font-weight:600;color:#8A94AD;letter-spacing:.08em;text-transform:uppercase;margin:24px 0 12px}
+.dim{color:#8A94AD}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.07);border-radius:24px;padding:18px}
+.acc{color:#F4B24A}
+.btn{height:56px;border-radius:18px;display:flex;align-items:center;justify-content:center;font-weight:650;font-size:16.5px}
+.btn.p{background:linear-gradient(180deg,#FFD592,#D98C22);color:#2B1A03;box-shadow:0 10px 30px rgba(244,178,74,.28)}
+.btn.g{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.09);color:#E8ECF4}
+.tabs{position:absolute;bottom:0;left:0;right:0;height:86px;background:rgba(10,14,26,.92);border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:space-around;padding-top:10px}
+.tab{display:flex;flex-direction:column;align-items:center;gap:5px;font-size:10.5px;color:#6B7590;font-weight:550}
+.tab.on{color:#F4B24A}
+.tab svg{width:24px;height:24px}
+.home{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);width:134px;height:5px;border-radius:3px;background:#E8ECF4;opacity:.85}
+.ico{width:40px;height:40px;border-radius:11px;display:grid;place-items:center;font-weight:700;font-size:15px;color:#fff;flex:none}
+.row{display:flex;align-items:center;gap:13px}
+.pill{font-size:12px;padding:5px 10px;border-radius:20px;background:rgba(244,178,74,.12);color:#F4B24A;font-weight:600}
+</style></head><body><div class="status"><span>9:41</span><span class="r"><svg width="18" height="12" viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1" fill="#E8ECF4"/><rect x="5" y="5" width="3" height="7" rx="1" fill="#E8ECF4"/><rect x="10" y="2.5" width="3" height="9.5" rx="1" fill="#E8ECF4"/><rect x="15" y="0" width="3" height="12" rx="1" fill="#E8ECF4"/></svg><svg width="16" height="12" viewBox="0 0 16 12"><path d="M8 11.5l2.2-2.6a3 3 0 00-4.4 0zM3.4 6.6a6.6 6.6 0 019.2 0l1.4-1.6a8.8 8.8 0 00-12 0zM.4 3.3a11 11 0 0115.2 0L16 2.9 14.6 1.3a13 13 0 00-13.2 0L0 2.9z" fill="#E8ECF4"/></svg><span class="bat"></span></span></div>
+<div class="sample">SAMPLE DATA</div>
+<div class="wrap">
+<div class="hdr"><div class="brand"><span class="logo"></span>Klarity</div><div class="pill">Last 7 days</div></div>
+<h1 style="margin-top:12px">Insights</h1>
+<div class="card" style="margin-top:14px">
+<div class="row" style="justify-content:space-between;align-items:flex-end"><div><div class="dim" style="font-size:12px;letter-spacing:.1em;font-weight:600">DAILY AVERAGE</div><div style="font-size:32px;font-weight:700;letter-spacing:-.02em;margin-top:4px">2h 38m</div></div><div class="acc" style="font-size:14px;font-weight:600;margin-bottom:6px">▼ 41m vs prior week</div></div>
+<div style="position:relative;display:flex;gap:4px;margin-top:8px">
+<div style="position:absolute;left:0;right:0;bottom:116px;border-top:1.5px dashed rgba(232,236,244,.40)"></div>
+<div style="position:absolute;left:0;bottom:120px;font-size:10.5px;color:#C9CFDD">goal 3h</div>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:7px;height:164px"><div style="font-size:10.5px;color:#6B7590">2.2h</div><div style="width:26px;height:66px;border-radius:9px;background:rgba(244,178,74,.35)"></div><div style="font-size:12px;color:#8A94AD;font-weight:600">F</div></div><div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:7px;height:164px"><div style="font-size:10.5px;color:#6B7590">1.9h</div><div style="width:26px;height:57px;border-radius:9px;background:rgba(244,178,74,.35)"></div><div style="font-size:12px;color:#8A94AD;font-weight:600">S</div></div><div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:7px;height:164px"><div style="font-size:10.5px;color:#6B7590">2.2h</div><div style="width:26px;height:66px;border-radius:9px;background:rgba(244,178,74,.35)"></div><div style="font-size:12px;color:#8A94AD;font-weight:600">S</div></div><div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:7px;height:164px"><div style="font-size:10.5px;color:#6B7590">3.6h</div><div style="width:26px;height:108px;border-radius:9px;background:rgba(232,110,138,.55)"></div><div style="font-size:12px;color:#8A94AD;font-weight:600">M</div></div><div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:7px;height:164px"><div style="font-size:10.5px;color:#6B7590">2.9h</div><div style="width:26px;height:87px;border-radius:9px;background:rgba(244,178,74,.35)"></div><div style="font-size:12px;color:#8A94AD;font-weight:600">T</div></div><div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:7px;height:164px"><div style="font-size:10.5px;color:#6B7590">3.2h</div><div style="width:26px;height:96px;border-radius:9px;background:rgba(232,110,138,.55)"></div><div style="font-size:12px;color:#8A94AD;font-weight:600">W</div></div><div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:7px;height:164px"><div style="font-size:10.5px;color:#E8ECF4">2.2h</div><div style="width:26px;height:66px;border-radius:9px;background:linear-gradient(180deg,#FFD592,#D98C22)"></div><div style="font-size:12px;color:#F4B24A;font-weight:600">Today</div></div></div></div>
+<div class="row" style="gap:12px;margin-top:12px">
+<div class="card" style="flex:1;padding:14px 16px"><div class="dim" style="font-size:12px;font-weight:600;letter-spacing:.08em">PICKUPS / DAY</div><div style="font-size:26px;font-weight:700;margin-top:4px">41</div><div class="acc" style="font-size:12.5px;margin-top:2px">▼ 9 vs prior week</div></div>
+<div class="card" style="flex:1;padding:14px 16px"><div class="dim" style="font-size:12px;font-weight:600;letter-spacing:.08em">FIRST PICKUP</div><div style="font-size:26px;font-weight:700;margin-top:4px">7:52</div><div class="dim" style="font-size:12.5px;margin-top:2px">average</div></div></div>
+<h2 style="margin-top:16px;margin-bottom:8px">Top apps</h2>
+<div class="card" style="padding:6px 16px"><div class="row" style="padding:8px 0"><span class="ico" style="width:34px;height:34px;border-radius:10px;background:#D9608C;font-size:13px">I</span><div style="flex:1"><div class="row" style="justify-content:space-between;font-size:15px"><span>Instagram</span><span class="dim" style="font-size:13.5px">1h 52m</span></div><div style="height:5px;border-radius:3px;background:rgba(255,255,255,.06);margin-top:7px"><div style="width:100%;height:100%;border-radius:3px;background:rgba(244,178,74,.6)"></div></div></div></div><div class="row" style="padding:8px 0"><span class="ico" style="width:34px;height:34px;border-radius:10px;background:#E05A4F;font-size:13px">Y</span><div style="flex:1"><div class="row" style="justify-content:space-between;font-size:15px"><span>YouTube</span><span class="dim" style="font-size:13.5px">1h 31m</span></div><div style="height:5px;border-radius:3px;background:rgba(255,255,255,.06);margin-top:7px"><div style="width:81%;height:100%;border-radius:3px;background:rgba(244,178,74,.6)"></div></div></div></div><div class="row" style="padding:8px 0"><span class="ico" style="width:34px;height:34px;border-radius:10px;background:#3D4360;font-size:13px">T</span><div style="flex:1"><div class="row" style="justify-content:space-between;font-size:15px"><span>TikTok</span><span class="dim" style="font-size:13.5px">1h 04m</span></div><div style="height:5px;border-radius:3px;background:rgba(255,255,255,.06);margin-top:7px"><div style="width:56%;height:100%;border-radius:3px;background:rgba(244,178,74,.6)"></div></div></div></div></div>
+</div><div class="tabs">
+<div class="tab T1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.5"/></svg>Today</div>
+<div class="tab T2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3.5" y="3.5" width="7" height="7" rx="2"/><rect x="13.5" y="3.5" width="7" height="7" rx="2"/><rect x="3.5" y="13.5" width="7" height="7" rx="2"/><rect x="13.5" y="13.5" width="7" height="7" rx="2"/></svg>Apps</div>
+<div class="tab on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 20V11M12 20V5M19 20v-6"/></svg>Insights</div>
+<div class="tab T4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg>Settings</div>
+</div><div class="home"></div>
+</body></html>

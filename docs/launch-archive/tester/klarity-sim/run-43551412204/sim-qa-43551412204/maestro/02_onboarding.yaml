@@ -1,0 +1,8 @@
+appId: com.samayhuf.klarity
+---
+- tapOn: "Instagram"
+- tapOn: "YouTube"
+- tapOn: "Continue with 2 apps"
+- extendedWaitUntil:
+    visible: "Connect your apps"
+    timeout: 20000

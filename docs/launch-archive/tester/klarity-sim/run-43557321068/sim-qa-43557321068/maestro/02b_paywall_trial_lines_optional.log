@@ -1,0 +1,4 @@
+Running on iPhone 17 Pro - iOS 26.2 - 98A0BFA3-CEC3-4FD6-9916-5A2149774DBF
+ > Flow 02b_paywall_trial_lines_optional
+Assert that ".*7 days free, then \$2\.99/month, cancel anytime.*" is visible... COMPLETED
+Assert that ".*7 days free, then \$19\.99/year, cancel anytime.*" is visible... COMPLETED
