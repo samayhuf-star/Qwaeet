@@ -32,7 +32,7 @@ Regional differences: none. Dates, streaks, and schedules use the device’s loc
 
 Regulatory documents: none. This is not a medical, financial, or other regulated-industry product. Privacy: https://samayhuf-star.github.io/Qwaeet/privacy.html. Terms: https://samayhuf-star.github.io/Qwaeet/terms.html.
 
-Contact: Samay Vashsht, +919953710111, samayhuf@gmail.com.
+Contact: Samay Vashsht, [phone redacted], samayhuf@gmail.com.
 
 ---
 

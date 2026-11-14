@@ -74,6 +74,6 @@ No FIX items. P0-1 is resolved. The gate is still **FAIL** until the screen reco
 - `[CHECK]` three times in the pastable review notes (and in the draft’s CHECK list).
 - `docs/LISTING.md` still says the privacy URL is “not live until Pages is enabled” — stale; the URL is live.
 
-No TODO, lorem, example.com, or dummy email/phone in the listing copy or in the notes’ contact line (`Samay Vashsht`, `+919953710111`, `samayhuf@gmail.com`). No AI mention in the store listing.
+No TODO, lorem, example.com, or dummy email/phone in the listing copy or in the notes’ contact line (`Samay Vashsht`, `[phone redacted]`, `samayhuf@gmail.com`). No AI mention in the store listing.
 
 This gate does **not** authorise a resubmit.
